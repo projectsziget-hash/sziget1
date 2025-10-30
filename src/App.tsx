@@ -5,6 +5,7 @@ import { Events } from './pages/Events';
 import { About } from './pages/About';
 import { HowItWorks } from './pages/HowItWorks';
 import { Safety } from './pages/Safety';
+import { Contact } from './pages/Contact';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/safety" element={<Safety />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
 
         <footer className="bg-white border-t border-gray-100 py-16 mt-20">

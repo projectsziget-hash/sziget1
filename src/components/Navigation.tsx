@@ -21,6 +21,7 @@ export function Navigation() {
     { path: '/how-it-works', label: 'How It Works' },
     { path: '/about', label: 'About' },
     { path: '/safety', label: 'Safety' },
+    { path: '/contact', label: 'Contact' },
   ];
 
   return (
