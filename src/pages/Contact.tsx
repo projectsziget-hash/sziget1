@@ -40,12 +40,12 @@ export function Contact() {
                 Join our community and chat with us
               </p>
               <a
-                href="https://discord.gg/szgt"
+                href="https://discord.com/channels/1433406277819826339/1433406278444650619"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-purple-600 font-medium hover:text-purple-700 transition-colors"
+                className="text-purple-600 font-medium hover:text-purple-700 transition-colors break-all"
               >
-                discord.gg/szgt
+                Join our Discord
               </a>
             </div>
 
@@ -58,12 +58,12 @@ export function Contact() {
                 Connect with us on Telegram
               </p>
               <a
-                href="https://t.me/szgt"
+                href="https://t.me/+hyu-T9yczys0MDJk"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-purple-600 font-medium hover:text-purple-700 transition-colors"
               >
-                t.me/szgt
+                Join our Telegram
               </a>
             </div>
 
@@ -95,7 +95,7 @@ export function Contact() {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a
-                href="https://twitter.com/szgt"
+                href="https://x.com/szigetonsol?s=21"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 bg-white rounded-full font-medium text-gray-900 hover:shadow-lg transition-all hover:scale-105"
