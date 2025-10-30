@@ -1,35 +1,31 @@
 import { Link } from 'react-router-dom';
-import { Home, Calendar, Info, HelpCircle, Shield } from 'lucide-react';
+import { Music } from 'lucide-react';
 
 export function Navigation() {
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-lg border-b border-gray-800">
+    <nav className="bg-black border-b border-gray-800 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <Link to="/" className="text-2xl font-black text-white">
-            SZIGET <span className="text-pink-600">'26</span>
+          <Link to="/" className="flex items-center gap-3">
+            <Music className="w-8 h-8 text-orange-500" />
+            <span className="text-2xl font-black text-white">$SZIGET</span>
           </Link>
 
-          <div className="flex gap-6">
-            <Link to="/" className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors">
-              <Home className="w-5 h-5" />
-              <span className="hidden md:inline font-bold">Home</span>
+          <div className="flex items-center gap-8">
+            <Link to="/" className="text-gray-300 hover:text-white transition">
+              Home
             </Link>
-            <Link to="/events" className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors">
-              <Calendar className="w-5 h-5" />
-              <span className="hidden md:inline font-bold">Events</span>
+            <Link to="/events" className="text-gray-300 hover:text-white transition">
+              Events
             </Link>
-            <Link to="/about" className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors">
-              <Info className="w-5 h-5" />
-              <span className="hidden md:inline font-bold">About</span>
+            <Link to="/how-it-works" className="text-gray-300 hover:text-white transition">
+              How It Works
             </Link>
-            <Link to="/how-it-works" className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors">
-              <HelpCircle className="w-5 h-5" />
-              <span className="hidden md:inline font-bold">How It Works</span>
+            <Link to="/about" className="text-gray-300 hover:text-white transition">
+              About
             </Link>
-            <Link to="/safety" className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors">
-              <Shield className="w-5 h-5" />
-              <span className="hidden md:inline font-bold">Safety</span>
+            <Link to="/safety" className="text-gray-300 hover:text-white transition">
+              Safety
             </Link>
           </div>
         </div>
