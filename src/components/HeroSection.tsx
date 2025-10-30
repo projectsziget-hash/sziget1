@@ -20,21 +20,21 @@ export function HeroSection() {
     <div className="relative bg-black">
       <div className="relative h-screen w-full overflow-hidden">
         <div
-          className="absolute inset-0 transition-all duration-700"
+          className="absolute inset-0 transition-all duration-700 flex items-center justify-center"
           style={{
             opacity,
             transform: `scale(${scale})`,
             filter: `blur(${blur}px)`
           }}
         >
-          <img
-            src="/SZ25-SZIGET-LOGO-PRESALE-26-16x9-EN-1.jpg"
-            alt="Sziget Festival"
-            className="w-full h-full object-cover animate-scaleIn"
-          />
-
+          <div className="absolute inset-0 bg-gradient-to-br from-purple-900 via-pink-900 to-orange-900" />
           <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/80" />
-          <div className="absolute inset-0 bg-gradient-to-r from-purple-900/10 via-transparent to-pink-900/10" />
+
+          <div className="relative z-10 text-center">
+            <div className="text-9xl md:text-[12rem] lg:text-[16rem] font-black text-white/10 tracking-tighter animate-scaleIn">
+              $SZGT
+            </div>
+          </div>
         </div>
 
         <div
