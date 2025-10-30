@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 export function WalletTracker() {
   const [copied, setCopied] = useState(false);
-  const walletAddress = '7xKXtg2CW87d97TXJSDpbD5jBkheTqA83TZRuJosgAsU';
+  const walletAddress = 'AhJ8eJHJqJVefJpVnNzc6V62ZZfJhSMPWmnCqWLx1QxG';
   const balance = 1234567.89;
   const transactions = 45678;
 
