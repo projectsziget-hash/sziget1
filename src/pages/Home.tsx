@@ -138,23 +138,23 @@ export function Home() {
         id="trading"
         className="bg-gray-50 py-12 sm:py-16 md:py-20"
       >
-        <div className="max-w-7xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div
-            className={`grid lg:grid-cols-3 gap-8 mb-16 transition-all duration-1000 ${
+            className={`flex flex-col lg:grid lg:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16 transition-all duration-1000 ${
               isVisible('trading') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
             }`}
           >
-            <div className="lg:col-span-2">
+            <div className="lg:col-span-2 order-2 lg:order-1">
               <TradingInterface />
             </div>
-            <div className="space-y-8">
+            <div className="space-y-6 sm:space-y-8 order-1 lg:order-2">
               <TokenPrice />
               <WalletTracker />
             </div>
           </div>
 
           <div
-            className={`mb-16 transition-all duration-1000 delay-200 ${
+            className={`mb-12 sm:mb-16 transition-all duration-1000 delay-200 ${
               isVisible('trading') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
             }`}
           >
@@ -162,7 +162,7 @@ export function Home() {
           </div>
 
           <div
-            className={`grid lg:grid-cols-2 gap-8 transition-all duration-1000 delay-400 ${
+            className={`flex flex-col lg:grid lg:grid-cols-2 gap-6 sm:gap-8 transition-all duration-1000 delay-400 ${
               isVisible('trading') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
             }`}
           >
