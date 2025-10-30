@@ -94,11 +94,18 @@ export function Navigation() {
                 key={item.path}
                 to={item.path}
                 onClick={() => setMobileMenuOpen(false)}
-                className="block text-gray-700 font-medium py-2 hover:text-purple-600 transition-colors"
+                className="block text-gray-700 font-medium py-3 hover:text-purple-600 transition-colors text-lg"
               >
                 {item.label}
               </Link>
             ))}
+            <Link
+              to="/"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block w-full text-center px-6 py-3 rounded-full font-bold bg-gradient-to-r from-pink-500 to-purple-500 text-white"
+            >
+              Trade Now
+            </Link>
           </div>
         </div>
       )}

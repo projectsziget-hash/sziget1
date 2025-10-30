@@ -40,7 +40,7 @@ export function Home() {
       <section
         ref={(el) => (sectionRefs.current['features'] = el)}
         id="features"
-        className="bg-gradient-to-b from-white to-gray-50 py-24 overflow-hidden"
+        className="bg-gradient-to-b from-white to-gray-50 py-16 sm:py-20 md:py-24 overflow-hidden"
       >
         <div className="max-w-6xl mx-auto px-6">
           <div
@@ -48,15 +48,15 @@ export function Home() {
               isVisible('features') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
             }`}
           >
-            <h2 className="text-5xl md:text-6xl font-black text-gray-900 mb-6 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-4 sm:mb-6 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
               A Non-Profit Movement
             </h2>
-            <p className="text-xl text-gray-600 font-light max-w-3xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 font-light max-w-3xl mx-auto leading-relaxed px-4">
               Every token traded brings us closer to Sziget 2026. Zero profit. Pure passion. Complete transparency.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
             {[
               {
                 icon: Heart,
@@ -82,16 +82,16 @@ export function Home() {
             ].map((feature, index) => (
               <div
                 key={index}
-                className={`group text-center p-8 bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 ${
+                className={`group text-center p-6 sm:p-8 bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 ${
                   isVisible('features') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
                 }`}
                 style={{ transitionDelay: feature.delay }}
               >
-                <div className={`w-20 h-20 bg-gradient-to-br ${feature.gradient} rounded-2xl mx-auto mb-6 flex items-center justify-center transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-300 shadow-xl`}>
-                  <feature.icon className="w-10 h-10 text-white" />
+                <div className={`w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br ${feature.gradient} rounded-2xl mx-auto mb-4 sm:mb-6 flex items-center justify-center transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-300 shadow-xl`}>
+                  <feature.icon className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">{feature.title}</h3>
-                <p className="text-gray-600 font-light leading-relaxed">
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">{feature.title}</h3>
+                <p className="text-sm sm:text-base text-gray-600 font-light leading-relaxed">
                   {feature.desc}
                 </p>
               </div>
@@ -103,7 +103,7 @@ export function Home() {
       <section
         ref={(el) => (sectionRefs.current['stats'] = el)}
         id="stats"
-        className="bg-gradient-to-br from-purple-900 via-purple-800 to-pink-900 py-20 relative overflow-hidden"
+        className="bg-gradient-to-br from-purple-900 via-purple-800 to-pink-900 py-12 sm:py-16 md:py-20 relative overflow-hidden"
       >
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 left-0 w-96 h-96 bg-pink-500 rounded-full blur-3xl animate-float" />
@@ -111,7 +111,7 @@ export function Home() {
         </div>
 
         <div className="max-w-6xl mx-auto px-6 relative z-10">
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             {[
               { icon: TrendingUp, value: '$420K', label: 'Market Cap', delay: '0s' },
               { icon: Activity, value: '12.5K', label: 'Total Trades', delay: '0.2s' },
@@ -124,9 +124,9 @@ export function Home() {
                 }`}
                 style={{ transitionDelay: stat.delay }}
               >
-                <stat.icon className="w-12 h-12 text-pink-300 mx-auto mb-4 stroke-[1.5]" />
-                <div className="text-5xl font-black text-white mb-2">{stat.value}</div>
-                <div className="text-purple-200 font-light">{stat.label}</div>
+                <stat.icon className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-pink-300 mx-auto mb-2 sm:mb-3 md:mb-4 stroke-[1.5]" />
+                <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-white mb-1 sm:mb-2">{stat.value}</div>
+                <div className="text-xs sm:text-sm md:text-base text-purple-200 font-light">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -136,7 +136,7 @@ export function Home() {
       <section
         ref={(el) => (sectionRefs.current['trading'] = el)}
         id="trading"
-        className="bg-gray-50 py-20"
+        className="bg-gray-50 py-12 sm:py-16 md:py-20"
       >
         <div className="max-w-7xl mx-auto px-6">
           <div

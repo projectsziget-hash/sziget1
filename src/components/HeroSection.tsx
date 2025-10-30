@@ -68,7 +68,7 @@ export function HeroSection() {
           </div>
 
           <h1
-            className={`text-6xl md:text-8xl lg:text-9xl font-black text-white mb-6 tracking-tighter leading-none transition-all duration-1000 delay-200 ${
+            className={`text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-black text-white mb-6 tracking-tighter leading-none transition-all duration-1000 delay-200 ${
               mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
             }`}
             style={{
@@ -79,7 +79,7 @@ export function HeroSection() {
           </h1>
 
           <div
-            className={`text-2xl md:text-4xl font-light text-white/90 mb-12 transition-all duration-1000 delay-400 ${
+            className={`text-lg sm:text-xl md:text-3xl lg:text-4xl font-light text-white/90 mb-12 px-4 transition-all duration-1000 delay-400 ${
               mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
             }`}
             style={{
@@ -90,18 +90,18 @@ export function HeroSection() {
           </div>
 
           <div
-            className={`flex flex-col sm:flex-row gap-4 justify-center transition-all duration-1000 delay-600 ${
+            className={`flex flex-col sm:flex-row gap-4 justify-center px-4 transition-all duration-1000 delay-600 ${
               mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
             }`}
           >
-            <button className="group px-8 py-4 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full font-bold text-white hover:shadow-2xl hover:shadow-purple-500/50 transition-all duration-300 hover:scale-105 animate-glow">
+            <button className="group px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full font-bold text-base sm:text-lg text-white hover:shadow-2xl hover:shadow-purple-500/50 transition-all duration-300 hover:scale-105 animate-glow">
               <span className="flex items-center gap-2 justify-center">
                 Start Trading
-                <Play className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                <Play className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
               </span>
             </button>
 
-            <button className="px-8 py-4 bg-white/10 backdrop-blur-md rounded-full font-bold text-white border-2 border-white/30 hover:bg-white/20 transition-all duration-300 hover:scale-105">
+            <button className="px-6 sm:px-8 py-3 sm:py-4 bg-white/10 backdrop-blur-md rounded-full font-bold text-base sm:text-lg text-white border-2 border-white/30 hover:bg-white/20 transition-all duration-300 hover:scale-105">
               Learn More
             </button>
           </div>
