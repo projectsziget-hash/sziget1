@@ -1,30 +1,28 @@
 import { Link } from 'react-router-dom';
-import { Music } from 'lucide-react';
 
 export function Navigation() {
   return (
-    <nav className="bg-black border-b-2 border-pink-500 sticky top-0 z-50 backdrop-blur-sm bg-black/90">
-      <div className="max-w-7xl mx-auto px-6 py-4">
+    <nav className="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100">
+      <div className="max-w-6xl mx-auto px-6 py-6">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-3 hover:scale-105 transition-transform">
-            <Music className="w-10 h-10 text-pink-500" />
-            <span className="text-3xl font-black text-white">$SZIGET</span>
+          <Link to="/" className="text-2xl font-light text-gray-900 hover:text-[#a680ff] transition-colors">
+            $SZIGET
           </Link>
 
-          <div className="flex items-center gap-8">
-            <Link to="/" className="text-gray-200 hover:text-pink-400 transition font-bold">
+          <div className="flex items-center gap-12">
+            <Link to="/" className="text-gray-600 hover:text-[#a680ff] transition-colors font-light">
               Home
             </Link>
-            <Link to="/events" className="text-gray-200 hover:text-pink-400 transition font-bold">
+            <Link to="/events" className="text-gray-600 hover:text-[#a680ff] transition-colors font-light">
               Events
             </Link>
-            <Link to="/how-it-works" className="text-gray-200 hover:text-pink-400 transition font-bold">
+            <Link to="/how-it-works" className="text-gray-600 hover:text-[#a680ff] transition-colors font-light">
               How It Works
             </Link>
-            <Link to="/about" className="text-gray-200 hover:text-pink-400 transition font-bold">
+            <Link to="/about" className="text-gray-600 hover:text-[#a680ff] transition-colors font-light">
               About
             </Link>
-            <Link to="/safety" className="text-gray-200 hover:text-pink-400 transition font-bold">
+            <Link to="/safety" className="text-gray-600 hover:text-[#a680ff] transition-colors font-light">
               Safety
             </Link>
           </div>
