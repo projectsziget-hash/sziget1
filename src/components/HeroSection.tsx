@@ -18,36 +18,28 @@ export function HeroSection() {
 
   return (
     <div className="relative bg-black">
-      {/* Mobile Hero - Minimal */}
-      <div className="md:hidden pt-20 pb-12 px-6">
-        <div className="max-w-md mx-auto text-center">
-          <div className="mb-6">
-            <img
-              src="/SZ25-SZIGET-LOGO-PRESALE-26-16x9-EN-1.jpg"
-              alt="Sziget Festival"
-              className="w-32 h-auto mx-auto rounded-lg"
-            />
-          </div>
-
-          <div className="inline-block px-4 py-1.5 bg-white/10 backdrop-blur-md rounded-full border border-white/20 mb-4">
-            <span className="text-white/90 text-xs font-medium tracking-wider">
-              SZIGET FESTIVAL 2026
+      {/* Mobile Hero - Text Only */}
+      <div className="md:hidden pt-24 pb-16 px-6 min-h-[70vh] flex items-center">
+        <div className="w-full text-center">
+          <div className="inline-block px-4 py-1.5 bg-white/5 rounded-full border border-white/10 mb-6">
+            <span className="text-white/70 text-xs tracking-widest">
+              SZIGET 2026
             </span>
           </div>
 
-          <h1 className="text-4xl font-black text-white mb-4 tracking-tight">
+          <h1 className="text-5xl font-black text-white mb-6 tracking-tight leading-none">
             THE ISLAND
           </h1>
 
-          <p className="text-sm text-white/80 mb-8 leading-relaxed">
-            <span className="text-pink-400 font-semibold">Community Funded</span>. <span className="text-blue-400 font-semibold">100% Transparent</span>. Zero Profit.
+          <p className="text-base text-white/70 mb-10 max-w-xs mx-auto leading-relaxed">
+            Community funded. 100% transparent. Zero profit.
           </p>
 
-          <div className="flex flex-col gap-3">
-            <button className="w-full px-6 py-3 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full font-bold text-sm text-white">
+          <div className="flex flex-col gap-3 max-w-xs mx-auto">
+            <button className="w-full px-6 py-3.5 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full font-semibold text-sm text-white shadow-lg shadow-purple-500/25">
               Start Trading
             </button>
-            <button className="w-full px-6 py-3 bg-white/10 backdrop-blur-md rounded-full font-bold text-sm text-white border border-white/30">
+            <button className="w-full px-6 py-3.5 bg-white/5 rounded-full font-semibold text-sm text-white border border-white/10">
               Learn More
             </button>
           </div>
