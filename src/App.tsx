@@ -21,13 +21,13 @@ function App() {
           <Route path="/safety" element={<Safety />} />
         </Routes>
 
-        <footer className="bg-black border-t border-gray-800 text-white py-16 mt-20">
+        <footer className="bg-black border-t-2 border-pink-500 text-white py-16 mt-20">
           <div className="max-w-6xl mx-auto px-6 text-center">
-            <Music className="w-12 h-12 mx-auto mb-4 text-gray-600" />
-            <p className="text-2xl font-black mb-2 text-gray-300">
+            <Music className="w-16 h-16 mx-auto mb-4 text-pink-500" />
+            <p className="text-3xl font-black mb-3 text-white">
               SZIGET FESTIVAL '26
             </p>
-            <p className="text-sm text-gray-500">
+            <p className="text-base font-bold text-pink-400">
               Powered by Solana Blockchain
             </p>
           </div>

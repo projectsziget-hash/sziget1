@@ -117,7 +117,7 @@ export function TradingInterface() {
       <button
         onClick={handleTrade}
         disabled={!solAmount || parseFloat(solAmount) <= 0}
-        className="w-full bg-orange-500 hover:bg-orange-600 disabled:bg-gray-700 disabled:text-gray-500 text-white font-bold py-4 rounded-xl transition"
+        className="w-full bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-500 hover:to-purple-500 disabled:bg-gray-700 disabled:text-gray-500 text-white font-black py-5 rounded-xl transition-all shadow-lg hover:shadow-pink-500/50 text-lg"
       >
         Connect Wallet to Trade
       </button>
