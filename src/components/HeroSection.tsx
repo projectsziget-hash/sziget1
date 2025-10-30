@@ -23,12 +23,7 @@ export function HeroSection() {
           <img
             src="/SZ25-SZIGET-LOGO-PRESALE-26-16x9-EN-1.jpg"
             alt="Sziget Festival"
-            className="w-[70%] h-auto object-contain animate-scaleIn"
-            style={{
-              opacity,
-              transform: `scale(${scale})`,
-              filter: `blur(${blur}px)`
-            }}
+            className="w-[50%] max-w-[200px] h-auto object-contain"
           />
         </div>
 
