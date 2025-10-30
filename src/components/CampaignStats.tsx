@@ -39,7 +39,7 @@ export function CampaignStats() {
     }
   };
 
-  const targetAmount = 100;
+  const targetAmount = 100000;
   const progress = Math.min((stats.totalRaised / targetAmount) * 100, 100);
 
   return (
@@ -48,7 +48,7 @@ export function CampaignStats() {
 
       <div className="mb-8">
         <div className="flex justify-between items-center mb-3">
-          <span className="text-gray-500 font-light">Goal: {targetAmount} SOL</span>
+          <span className="text-gray-500 font-light">Goal: {targetAmount.toLocaleString()} SOL</span>
           <span className="text-gray-900 font-light">{progress.toFixed(1)}%</span>
         </div>
         <div className="h-3 bg-gray-100 rounded-full overflow-hidden">
