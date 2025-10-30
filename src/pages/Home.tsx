@@ -5,7 +5,7 @@ import { TradeHistory } from '../components/TradeHistory';
 import { CampaignStats } from '../components/CampaignStats';
 import { DonationSection } from '../components/DonationSection';
 import { WalletTracker } from '../components/WalletTracker';
-import { Music, Heart, Users, Zap, TrendingUp, Shield } from 'lucide-react';
+import { Heart, Users, TrendingUp, Activity, Lock } from 'lucide-react';
 import { useState, useEffect, useRef } from 'react';
 
 export function Home() {
@@ -66,7 +66,7 @@ export function Home() {
                 delay: '0s'
               },
               {
-                icon: Shield,
+                icon: Lock,
                 gradient: 'from-blue-500 to-cyan-500',
                 title: 'Fully Transparent',
                 desc: 'Track every transaction in real-time on Solana blockchain. Watch the festival fund grow with complete visibility.',
@@ -114,8 +114,8 @@ export function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               { icon: TrendingUp, value: '$420K', label: 'Market Cap', delay: '0s' },
-              { icon: Zap, value: '12.5K', label: 'Total Trades', delay: '0.2s' },
-              { icon: Shield, value: '100%', label: 'Transparent', delay: '0.4s' }
+              { icon: Activity, value: '12.5K', label: 'Total Trades', delay: '0.2s' },
+              { icon: Lock, value: '100%', label: 'Transparent', delay: '0.4s' }
             ].map((stat, index) => (
               <div
                 key={index}
@@ -124,7 +124,7 @@ export function Home() {
                 }`}
                 style={{ transitionDelay: stat.delay }}
               >
-                <stat.icon className="w-12 h-12 text-pink-300 mx-auto mb-4" />
+                <stat.icon className="w-12 h-12 text-pink-300 mx-auto mb-4 stroke-[1.5]" />
                 <div className="text-5xl font-black text-white mb-2">{stat.value}</div>
                 <div className="text-purple-200 font-light">{stat.label}</div>
               </div>
