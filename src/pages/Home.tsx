@@ -4,7 +4,8 @@ import { TradingInterface } from '../components/TradingInterface';
 import { TradeHistory } from '../components/TradeHistory';
 import { CampaignStats } from '../components/CampaignStats';
 import { DonationSection } from '../components/DonationSection';
-import { Music, Sparkles, Users, Zap, TrendingUp, Shield } from 'lucide-react';
+import { WalletTracker } from '../components/WalletTracker';
+import { Music, Heart, Users, Zap, TrendingUp, Shield } from 'lucide-react';
 import { useState, useEffect, useRef } from 'react';
 
 export function Home() {
@@ -48,34 +49,34 @@ export function Home() {
             }`}
           >
             <h2 className="text-5xl md:text-6xl font-black text-gray-900 mb-6 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-              Where Music Meets Innovation
+              A Non-Profit Movement
             </h2>
             <p className="text-xl text-gray-600 font-light max-w-3xl mx-auto leading-relaxed">
-              The world's first festival-funding memecoin powered by community passion and blockchain technology
+              Every token traded brings us closer to Sziget 2026. Zero profit. Pure passion. Complete transparency.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                icon: Music,
-                gradient: 'from-pink-500 to-purple-600',
-                title: 'Trade & Earn',
-                desc: 'Every transaction fuels the festival. Buy, sell, and watch your impact grow with lightning-fast Solana transactions.',
+                icon: Heart,
+                gradient: 'from-pink-500 to-rose-600',
+                title: '100% Non-Profit',
+                desc: 'Every single dollar from trading fees goes directly to Sziget Festival 2026. No middlemen, no margins, no BS.',
                 delay: '0s'
               },
               {
-                icon: Sparkles,
+                icon: Shield,
                 gradient: 'from-blue-500 to-cyan-500',
-                title: 'Fund Freedom',
-                desc: '100% of trading fees go directly to making Sziget Festival 2026 the most legendary celebration of music and culture.',
+                title: 'Fully Transparent',
+                desc: 'Track every transaction in real-time on Solana blockchain. Watch the festival fund grow with complete visibility.',
                 delay: '0.2s'
               },
               {
                 icon: Users,
                 gradient: 'from-orange-500 to-red-500',
-                title: 'Join the Tribe',
-                desc: 'Unite with thousands of music lovers, crypto enthusiasts, and freedom seekers building the future together.',
+                title: 'Community Powered',
+                desc: 'Built by festival lovers, for festival lovers. Together we make Sziget 2026 happen without corporate sponsorship.',
                 delay: '0.4s'
               }
             ].map((feature, index) => (
@@ -146,8 +147,9 @@ export function Home() {
             <div className="lg:col-span-2">
               <TradingInterface />
             </div>
-            <div>
+            <div className="space-y-8">
               <TokenPrice />
+              <WalletTracker />
             </div>
           </div>
 

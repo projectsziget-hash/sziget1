@@ -86,7 +86,7 @@ export function HeroSection() {
               textShadow: '0 2px 10px rgba(0,0,0,0.5)'
             }}
           >
-            Where <span className="bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent font-bold">Music</span> Meets <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent font-bold">Freedom</span>
+            <span className="bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent font-bold">Community Funded</span>. <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent font-bold">100% Transparent</span>. Zero Profit.
           </div>
 
           <div
