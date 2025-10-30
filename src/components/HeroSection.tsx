@@ -18,8 +18,8 @@ export function HeroSection() {
 
   return (
     <div className="relative bg-black">
-      {/* Mobile Hero - Text Only */}
-      <div className="md:hidden pt-24 pb-16 px-6 min-h-[70vh] flex items-center">
+      {/* Mobile Hero - Text Only - v2 */}
+      <div className="md:hidden pt-24 pb-16 px-6 min-h-[70vh] flex items-center bg-black">
         <div className="w-full text-center">
           <div className="inline-block px-4 py-1.5 bg-white/5 rounded-full border border-white/10 mb-6">
             <span className="text-white/70 text-xs tracking-widest">
