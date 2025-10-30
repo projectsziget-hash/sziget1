@@ -18,7 +18,7 @@ export function HeroSection() {
 
   return (
     <div className="relative bg-black">
-      <div className="relative h-screen w-full overflow-hidden">
+      <div className="relative h-[50vh] md:h-[70vh] lg:h-screen w-full overflow-hidden">
         <div
           className="absolute inset-0 transition-all duration-700"
           style={{
@@ -90,18 +90,18 @@ export function HeroSection() {
           </div>
 
           <div
-            className={`flex flex-col sm:flex-row gap-4 justify-center px-4 transition-all duration-1000 delay-600 ${
+            className={`flex flex-col gap-3 justify-center px-4 max-w-sm mx-auto md:max-w-none md:flex-row md:gap-4 transition-all duration-1000 delay-600 ${
               mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
             }`}
           >
-            <button className="group px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full font-bold text-base sm:text-lg text-white hover:shadow-2xl hover:shadow-purple-500/50 transition-all duration-300 hover:scale-105 animate-glow">
+            <button className="group w-full md:w-auto px-6 md:px-8 py-3 md:py-4 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full font-bold text-base md:text-lg text-white hover:shadow-2xl hover:shadow-purple-500/50 transition-all duration-300 hover:scale-105 animate-glow">
               <span className="flex items-center gap-2 justify-center">
                 Start Trading
-                <Play className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
+                <Play className="w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-1 transition-transform" />
               </span>
             </button>
 
-            <button className="px-6 sm:px-8 py-3 sm:py-4 bg-white/10 backdrop-blur-md rounded-full font-bold text-base sm:text-lg text-white border-2 border-white/30 hover:bg-white/20 transition-all duration-300 hover:scale-105">
+            <button className="w-full md:w-auto px-6 md:px-8 py-3 md:py-4 bg-white/10 backdrop-blur-md rounded-full font-bold text-base md:text-lg text-white border-2 border-white/30 hover:bg-white/20 transition-all duration-300 hover:scale-105">
               Learn More
             </button>
           </div>
