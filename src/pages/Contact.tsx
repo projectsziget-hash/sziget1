@@ -24,10 +24,10 @@ export function Contact() {
                 Get in touch with our team via email
               </p>
               <a
-                href="mailto:contact@szgt.io"
+                href="mailto:projectsziget@gmail.com"
                 className="text-purple-600 font-medium hover:text-purple-700 transition-colors"
               >
-                contact@szgt.io
+                projectsziget@gmail.com
               </a>
             </div>
 
