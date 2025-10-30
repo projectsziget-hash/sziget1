@@ -18,7 +18,7 @@ export function HeroSection() {
 
   return (
     <div className="relative bg-black">
-      <div className="relative h-[40vh] md:h-[60vh] lg:h-screen w-full overflow-hidden">
+      <div className="relative h-[25vh] md:h-[60vh] lg:h-screen w-full overflow-hidden">
         <div
           className="absolute inset-0 transition-all duration-700"
           style={{
