@@ -30,7 +30,7 @@ export function HeroSection() {
           <img
             src="/SZ25-SZIGET-LOGO-PRESALE-26-16x9-EN-1.jpg"
             alt="Sziget Festival"
-            className="max-w-[80%] h-auto object-contain md:w-full md:max-w-full md:h-full md:object-cover animate-scaleIn mx-auto"
+            className="w-[80%] h-auto object-contain md:w-full md:h-full md:object-cover animate-scaleIn"
           />
 
           <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/80" />
