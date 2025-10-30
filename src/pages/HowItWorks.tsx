@@ -34,10 +34,10 @@ export function HowItWorks() {
           <div className="bg-gray-900 border border-gray-800 rounded-2xl p-8 flex-1">
             <div className="flex items-center gap-3 mb-3">
               <Coins className="w-8 h-8 text-orange-500" />
-              <h3 className="text-2xl font-bold text-white">Buy $SZIGET Tokens</h3>
+              <h3 className="text-2xl font-bold text-white">Buy $SZGT Tokens</h3>
             </div>
             <p className="text-gray-400 text-lg">
-              Trade your SOL for $SZIGET tokens directly on our platform. Transactions
+              Trade your SOL for $SZGT tokens directly on our platform. Transactions
               are instant and fees are minimal thanks to Solana's fast blockchain.
             </p>
           </div>
@@ -82,7 +82,7 @@ export function HowItWorks() {
           <div>
             <h4 className="text-xl font-bold text-white mb-2">Token Distribution</h4>
             <p className="text-gray-400">
-              $SZIGET has a fixed supply with transparent distribution. No hidden
+              $SZGT has a fixed supply with transparent distribution. No hidden
               allocations, no team tokens—everything is community-driven.
             </p>
           </div>

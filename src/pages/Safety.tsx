@@ -16,7 +16,7 @@ export function Safety() {
           <div>
             <h2 className="text-3xl font-black text-white mb-4">Built on Solana</h2>
             <p className="text-gray-300 text-lg">
-              $SZIGET leverages Solana's industry-leading blockchain technology, providing
+              $SZGT leverages Solana's industry-leading blockchain technology, providing
               fast, secure, and low-cost transactions. The platform has been battle-tested
               by billions of dollars in daily trading volume across the ecosystem.
             </p>
@@ -116,7 +116,7 @@ export function Safety() {
             <h3 className="text-2xl font-bold text-white mb-3">Important Disclaimer</h3>
             <p className="text-gray-300 mb-4">
               Cryptocurrency trading carries risk. Never invest more than you can afford
-              to lose. $SZIGET is a memecoin created to support Sziget Festival 2026,
+              to lose. $SZGT is a memecoin created to support Sziget Festival 2026,
               and token value may fluctuate significantly.
             </p>
             <p className="text-gray-300">

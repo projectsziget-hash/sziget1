@@ -4,21 +4,21 @@ import { ArrowUpDown, Wallet } from 'lucide-react';
 export function TradingInterface() {
   const [tradeType, setTradeType] = useState<'buy' | 'sell'>('buy');
   const [solAmount, setSolAmount] = useState('');
-  const [szigetAmount, setSzigetAmount] = useState('');
+  const [szgtAmount, setSzgtAmount] = useState('');
 
   const currentPrice = 0.0042;
 
   const handleSolChange = (value: string) => {
     setSolAmount(value);
     if (value) {
-      setSzigetAmount((parseFloat(value) / currentPrice).toFixed(2));
+      setSzgtAmount((parseFloat(value) / currentPrice).toFixed(2));
     } else {
-      setSzigetAmount('');
+      setSzgtAmount('');
     }
   };
 
-  const handleSzigetChange = (value: string) => {
-    setSzigetAmount(value);
+  const handleSzgtChange = (value: string) => {
+    setSzgtAmount(value);
     if (value) {
       setSolAmount((parseFloat(value) * currentPrice).toFixed(4));
     } else {
@@ -27,7 +27,7 @@ export function TradingInterface() {
   };
 
   const handleTrade = () => {
-    alert(`${tradeType === 'buy' ? 'Buying' : 'Selling'} ${szigetAmount} $SZIGET for ${solAmount} SOL`);
+    alert(`${tradeType === 'buy' ? 'Buying' : 'Selling'} ${szgtAmount} $SZGT for ${solAmount} SOL`);
   };
 
   return (
@@ -85,19 +85,19 @@ export function TradingInterface() {
         <div className="bg-white rounded-2xl p-6 border border-gray-100">
           <div className="flex justify-between items-center mb-3">
             <label className="text-gray-500 text-sm font-light">You Receive</label>
-            <span className="text-gray-400 text-sm font-light">Balance: 0 $SZIGET</span>
+            <span className="text-gray-400 text-sm font-light">Balance: 0 $SZGT</span>
           </div>
           <div className="flex items-center gap-3">
             <input
               type="number"
-              value={szigetAmount}
-              onChange={(e) => handleSzigetChange(e.target.value)}
+              value={szgtAmount}
+              onChange={(e) => handleSzgtChange(e.target.value)}
               placeholder="0.00"
               className="bg-transparent text-gray-900 text-3xl font-light outline-none flex-1"
             />
             <div className="flex items-center gap-2 bg-gray-50 px-4 py-2 rounded-xl">
               <span className="text-2xl">🎪</span>
-              <span className="font-light text-gray-900">$SZIGET</span>
+              <span className="font-light text-gray-900">$SZGT</span>
             </div>
           </div>
         </div>

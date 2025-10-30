@@ -22,7 +22,7 @@ export interface Trade {
   wallet_address: string;
   trade_type: 'buy' | 'sell';
   sol_amount: number;
-  sziget_amount: number;
+  szgt_amount: number;
   price_per_token: number;
   transaction_signature: string;
   status: 'pending' | 'completed' | 'failed';

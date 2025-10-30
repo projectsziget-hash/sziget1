@@ -5,7 +5,7 @@ export function About() {
     <div className="bg-white">
       <div className="max-w-5xl mx-auto px-6 py-24">
         <div className="text-center mb-20">
-          <h1 className="text-6xl md:text-7xl font-black text-gray-900 mb-6">The $SZIGET Story</h1>
+          <h1 className="text-6xl md:text-7xl font-black text-gray-900 mb-6">The $SZGT Story</h1>
           <p className="text-2xl text-gray-600 font-light max-w-3xl mx-auto">
             Where blockchain meets beats, community meets culture, and trading creates magic
           </p>
@@ -15,7 +15,7 @@ export function About() {
           <h2 className="text-4xl font-black text-gray-900 mb-6">A Revolution in Festival Funding</h2>
           <p className="text-gray-700 text-lg leading-relaxed mb-6 font-light">
             Imagine a world where your passion for music and crypto converge to create something extraordinary.
-            $SZIGET isn't just another token—it's a radical experiment in collective action, where every trade
+            $SZGT isn't just another token—it's a radical experiment in collective action, where every trade
             becomes a vote for freedom, every holder becomes a patron, and every transaction brings us closer
             to the ultimate celebration of life and music.
           </p>

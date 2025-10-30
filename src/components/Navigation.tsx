@@ -39,7 +39,7 @@ export function Navigation() {
               scrolled ? 'text-gray-900' : 'text-white drop-shadow-lg'
             }`}
           >
-            $SZIGET
+            $SZGT
           </Link>
 
           <div className="hidden md:flex items-center gap-8">

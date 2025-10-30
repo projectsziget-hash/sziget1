@@ -10,7 +10,7 @@ export function TokenPrice() {
     <div className="group bg-gradient-to-br from-purple-50 to-pink-50 rounded-3xl p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 border border-purple-100">
       <div className="flex items-center justify-between mb-6">
         <div>
-          <h3 className="text-gray-600 text-sm font-medium mb-2 uppercase tracking-wider">$SZIGET Price</h3>
+          <h3 className="text-gray-600 text-sm font-medium mb-2 uppercase tracking-wider">$SZGT Price</h3>
           <div className="flex items-center gap-3">
             <span className="text-4xl font-bold text-gray-900 group-hover:scale-110 transition-transform duration-300">${price}</span>
             <div className={`flex items-center gap-1 px-3 py-1.5 rounded-full animate-pulse ${

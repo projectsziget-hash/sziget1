@@ -89,12 +89,12 @@ export function Events() {
           <div>
             <h2 className="text-3xl font-black text-white mb-4">Support the Festival</h2>
             <p className="text-gray-300 text-lg mb-6">
-              By trading $SZIGET tokens, you're directly contributing to making this
+              By trading $SZGT tokens, you're directly contributing to making this
               incredible event happen. Every transaction brings us closer to creating
               an unforgettable experience for hundreds of thousands of festival-goers.
             </p>
             <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold px-8 py-4 rounded-xl transition">
-              Trade $SZIGET Now
+              Trade $SZGT Now
             </button>
           </div>
         </div>

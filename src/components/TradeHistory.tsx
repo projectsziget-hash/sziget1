@@ -8,7 +8,7 @@ interface Trade {
   trader_name: string | null;
   trade_type: 'buy' | 'sell';
   sol_amount: number;
-  sziget_amount: number;
+  szgt_amount: number;
   price_per_token: number;
   created_at: string;
 }
@@ -95,7 +95,7 @@ export function TradeHistory() {
                     {trade.trader_name || formatAddress(trade.wallet_address)}
                   </div>
                   <div className="text-sm text-gray-500 font-light">
-                    {trade.trade_type === 'buy' ? 'Bought' : 'Sold'} {trade.sziget_amount.toLocaleString()} $SZIGET
+                    {trade.trade_type === 'buy' ? 'Bought' : 'Sold'} {trade.szgt_amount.toLocaleString()} $SZGT
                   </div>
                 </div>
               </div>
