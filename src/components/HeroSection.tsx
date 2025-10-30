@@ -18,7 +18,7 @@ export function HeroSection() {
 
   return (
     <div className="relative bg-black">
-      <div className="relative h-[50vh] md:h-[70vh] lg:h-screen w-full overflow-hidden">
+      <div className="relative h-[40vh] md:h-[60vh] lg:h-screen w-full overflow-hidden">
         <div
           className="absolute inset-0 transition-all duration-700"
           style={{
@@ -53,7 +53,7 @@ export function HeroSection() {
         </div>
       </div>
 
-      <div className="relative bg-gradient-to-b from-black via-gray-900 to-black py-20 px-6 z-10">
+      <div className="relative bg-gradient-to-b from-black via-gray-900 to-black py-12 md:py-16 lg:py-20 px-6 z-10">
         <div className="max-w-4xl mx-auto text-center">
           <div
             className={`mb-8 transition-all duration-1000 ${
