@@ -4,50 +4,63 @@ import { ChevronDown, Play } from 'lucide-react';
 export function HeroSection() {
   const [scrollY, setScrollY] = useState(0);
   const [mounted, setMounted] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     setMounted(true);
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+
     const handleScroll = () => setScrollY(window.scrollY);
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', checkMobile);
+    };
   }, []);
 
   const opacity = Math.max(0, 1 - scrollY / 600);
   const scale = Math.max(0.85, 1 - scrollY / 3000);
   const blur = Math.min(8, scrollY / 100);
 
-  return (
-    <div className="relative bg-black">
-      {/* Mobile Hero - Text Only - v2 */}
-      <div className="md:hidden pt-24 pb-16 px-6 min-h-[70vh] flex items-center bg-black">
-        <div className="w-full text-center">
-          <div className="inline-block px-4 py-1.5 bg-white/5 rounded-full border border-white/10 mb-6">
-            <span className="text-white/70 text-xs tracking-widest">
-              SZIGET 2026
-            </span>
-          </div>
+  if (isMobile) {
+    return (
+      <div className="relative bg-black">
+        <div className="pt-24 pb-16 px-6 min-h-[70vh] flex items-center bg-black">
+          <div className="w-full text-center">
+            <div className="inline-block px-4 py-1.5 bg-white/5 rounded-full border border-white/10 mb-6">
+              <span className="text-white/70 text-xs tracking-widest">
+                SZIGET 2026
+              </span>
+            </div>
 
-          <h1 className="text-5xl font-black text-white mb-6 tracking-tight leading-none">
-            THE ISLAND
-          </h1>
+            <h1 className="text-5xl font-black text-white mb-6 tracking-tight leading-none">
+              THE ISLAND
+            </h1>
 
-          <p className="text-base text-white/70 mb-10 max-w-xs mx-auto leading-relaxed">
-            Community funded. 100% transparent. Zero profit.
-          </p>
+            <p className="text-base text-white/70 mb-10 max-w-xs mx-auto leading-relaxed">
+              Community funded. 100% transparent. Zero profit.
+            </p>
 
-          <div className="flex flex-col gap-3 max-w-xs mx-auto">
-            <button className="w-full px-6 py-3.5 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full font-semibold text-sm text-white shadow-lg shadow-purple-500/25">
-              Start Trading
-            </button>
-            <button className="w-full px-6 py-3.5 bg-white/5 rounded-full font-semibold text-sm text-white border border-white/10">
-              Learn More
-            </button>
+            <div className="flex flex-col gap-3 max-w-xs mx-auto">
+              <button className="w-full px-6 py-3.5 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full font-semibold text-sm text-white shadow-lg shadow-purple-500/25">
+                Start Trading
+              </button>
+              <button className="w-full px-6 py-3.5 bg-white/5 rounded-full font-semibold text-sm text-white border border-white/10">
+                Learn More
+              </button>
+            </div>
           </div>
         </div>
       </div>
+    );
+  }
 
-      {/* Desktop Hero - Full Featured */}
-      <div className="hidden md:block">
+  return (
+    <div className="relative bg-black">
+      <div>
         <div className="relative h-[60vh] lg:h-screen w-full overflow-hidden">
           <div
             className="absolute inset-0 transition-all duration-700"
