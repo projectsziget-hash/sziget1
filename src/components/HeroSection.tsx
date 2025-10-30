@@ -18,9 +18,22 @@ export function HeroSection() {
 
   return (
     <div className="relative bg-black">
-      <div className="relative h-[25vh] md:h-[60vh] lg:h-screen w-full overflow-hidden flex items-center justify-center md:block">
+      <div className="relative h-[25vh] md:h-[60vh] lg:h-screen w-full overflow-hidden">
+        <div className="flex items-center justify-center h-full md:hidden">
+          <img
+            src="/SZ25-SZIGET-LOGO-PRESALE-26-16x9-EN-1.jpg"
+            alt="Sziget Festival"
+            className="w-[70%] h-auto object-contain animate-scaleIn"
+            style={{
+              opacity,
+              transform: `scale(${scale})`,
+              filter: `blur(${blur}px)`
+            }}
+          />
+        </div>
+
         <div
-          className="transition-all duration-700 md:absolute md:inset-0"
+          className="hidden md:block absolute inset-0 transition-all duration-700"
           style={{
             opacity,
             transform: `scale(${scale})`,
@@ -30,7 +43,7 @@ export function HeroSection() {
           <img
             src="/SZ25-SZIGET-LOGO-PRESALE-26-16x9-EN-1.jpg"
             alt="Sziget Festival"
-            className="w-[80%] h-auto object-contain md:w-full md:h-full md:object-cover animate-scaleIn"
+            className="w-full h-full object-cover animate-scaleIn"
           />
 
           <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/80" />
